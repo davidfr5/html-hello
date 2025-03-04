@@ -6,47 +6,64 @@ body {
     align-items: center;
     margin: 20px;
 }
-h1{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    font-style: oblique;
-}
-.title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.feed {
-    width: 400px;
-}
 .post {
     background: white;
+    width: 400px;
     padding: 10px;
-    margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     position: relative;
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #000; 
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+.username {
+    font-weight: bold;
+    font-size: 14px;
+}
+.user-subname {
+    font-size: 12px;
+    color: gray;
 }
 .post img {
     width: 100%;
     max-height: 280px;
     border-radius: 8px;
 }
-.post h3 {
-    margin: 10px 0 5px;
+.post-icons {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    padding: 10px;
 }
-.post .date {
-    color: gray;
-    font-size: 12px;
-    margin-left: auto;
-    text-align: right;
-} 
-.post p {
+.icons-left i, .post-icons i {
+    font-size: 22px;
+    color: #000; 
+    margin-right: 10px;
+}
+.likes {
     font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.description {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #333;
+    text-align: justify;
 }

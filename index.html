@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed de Fotos</title>
+    <title>Instagram Post</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="feed">
-        <div><h1>Instagram Feed Photos</h1></div>
-        <div class="post">
-            <h3>Real Madrid VS Barcelona <span class="date">12/21</span></h3>
-            <img src=".vscode/vs170419-0211.jpg" alt="Clasico">
-            <p>El partido del finde</p>
+    <div class="post">
+        <!-- Encabezado del post -->
+        <div class="post-header">
+            <div class="profile">
+                <i class="fa-solid fa-code"></i>
+                <div class="profile-info">
+                    <span class="username">HTML5</span>
+                    <span class="user-subname">Rigoberto</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
         </div>
-        <div class="post">
-            <h3>Kachow <span class="date">9/22</span></h3>
-            <img src=".vscode/f1.jpg" alt="F1">
-            <p>Carrera en Barein</p>
+
+        <!-- Imagen del post -->
+        <img src=".vscode/nfl.jpg" alt="nfl">
+
+        <!-- Sección de iconos -->
+        <div class="post-icons">
+            <div class="icons-left">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+            </div>
+            <i class="fa-regular fa-bookmark"></i>
         </div>
-        <div class="post">
-            <h3>Come on Eagles! <span class="date">12/22</span></h3>
-            <img src=".vscode/nfl.jpg" alt="Super bowl">
-            <p></p>
-        </div>
-        <div class="post">
-            <h3>Comida deliciosa <span class="date">04/24</span></h3>
-            <img src=".vscode/pizza.jpg" alt="Comida deliciosa">
-            <p>De mis cenas favoritas, simple y buenisimo</p>
-        </div>
+
+        <!-- Sección de "Me gusta" -->
+        <p class="likes">Liked by <strong>4GeeksAcademy, html5, Web</strong> and <strong>100,000 others</strong></p>
+
+        <!-- Descripción -->
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 </body>
 </html>
